@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: marker
-        run: echo "MARKER=BASE_BRANCH_WORKFLOW"
+        run: echo "MARKER=PR_HEAD_WORKFLOW"
