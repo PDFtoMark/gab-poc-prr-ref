@@ -1,0 +1,10 @@
+name: prr-ref
+on:
+  pull_request_review:
+    types: [submitted]
+jobs:
+  t:
+    runs-on: ubuntu-latest
+    steps:
+      - name: marker
+        run: echo "MARKER=BASE_BRANCH_WORKFLOW"
